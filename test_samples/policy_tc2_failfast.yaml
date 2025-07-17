@@ -1,0 +1,6 @@
+default_enforcement: ENFORCE
+rules:
+  - rule_id: amount_type_check
+    expression: "type(column:amount) == float"
+    severity: fatal
+    fail_fast: true
