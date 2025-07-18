@@ -1,0 +1,5 @@
+default_enforcement: DRY_RUN
+rules:
+  - rule_id: missing_email
+    expression: "column_exists('email')"
+    severity: warn
